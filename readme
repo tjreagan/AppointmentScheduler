@@ -1,0 +1,13 @@
+There are three users: test, Thomas, Doctor
+Passwords are the same as the names.
+
+Lambdas used to handle basic scene changing and alert popups.
+
+Sorting calendar by Month or Week is done by simply sorting the table by clicking the relevant column.
+
+Language adjustment requirements for the login page are handled in German (de) and Spanish (es).
+
+There may be unused methods and variables scattered throughout the code.
+Needs to be cleaned up.
+
+**NOTE** Server functionality may break at some point since it's hosted by the school

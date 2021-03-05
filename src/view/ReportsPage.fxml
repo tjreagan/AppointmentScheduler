@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="871.0" prefWidth="1469.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ReportsPageController">
+   <children>
+      <TableView fx:id="reportOneTable" layoutX="29.0" layoutY="67.0" prefHeight="698.0" prefWidth="409.0">
+        <columns>
+          <TableColumn fx:id="monthColumn" prefWidth="125.0" text="Month" />
+          <TableColumn fx:id="typeColumn" minWidth="0.0" prefWidth="149.0" text="Type" />
+            <TableColumn fx:id="countColumn" prefWidth="134.0" text="Count" />
+        </columns>
+      </TableView>
+      <TableView fx:id="reportTwoTable" layoutX="529.0" layoutY="67.0" prefHeight="698.0" prefWidth="409.0">
+        <columns>
+          <TableColumn fx:id="consultantColumn" prefWidth="208.0" text="Consultant" />
+          <TableColumn fx:id="appointmentsColumn" prefWidth="200.0" text="Appointments" />
+        </columns>
+      </TableView>
+      <TableView fx:id="reportThreeTable" layoutX="1027.0" layoutY="67.0" prefHeight="698.0" prefWidth="418.0">
+        <columns>
+          <TableColumn fx:id="cityColumn" prefWidth="218.0" text="City" />
+          <TableColumn fx:id="addressesColumn" minWidth="0.0" prefWidth="199.0" text="Addresses" />
+        </columns>
+      </TableView>
+      <Label layoutX="29.0" layoutY="43.0" text="Appointments by Type per Month">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="529.0" layoutY="45.0" text="Appointments by Consultant">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="1027.0" layoutY="47.0" text="Cities by Addresses">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="1325.0" layoutY="798.0" mnemonicParsing="false" onAction="#goBack" prefHeight="51.0" prefWidth="120.0" text="Back" />
+   </children>
+</AnchorPane>
